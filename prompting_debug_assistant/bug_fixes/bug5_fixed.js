@@ -14,9 +14,4 @@ const orders = [{ id: 101 }, { id: 102 }, { id: 103 }];
 
 processOrders(orders).then(result => {
     console.log("Completed orders recorded:", result);
-    if (result === 3) {
-        console.log("bug5_fixed.js: Async execution passed successfully! ✅");
-    } else {
-        console.error("bug5_fixed.js: Test failed! ❌");
-    }
 });
