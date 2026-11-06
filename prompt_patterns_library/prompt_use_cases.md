@@ -1,59 +1,75 @@
-# Coding
-### Write Code
-Goal - Write code using AI
-Input - Description of the program in natural language
-Output - Code
+# Prompt Use Cases
 
-### Performance update
-Goal - to ensure a smoother operation of the program
-Input - Extracted from the slow update part of the code
-Output - Updated program
+# Coding
+
+### Write Code
+- **Goal**: Write clean and functional code using AI.
+- **Input**: Description of the program or logic in natural language.
+- **Expected output**: Production-ready code block with brief implementation comments.
+
+### Performance Optimization
+- **Goal**: Ensure smoother and faster operation of a program.
+- **Input**: Extracted performance bottleneck or slow-running code snippet.
+- **Expected output**: Optimized code block with explainable performance gains.
 
 ### Refactoring
-Goal - Incrase Readibility
-Input - Current Code Block
-Output - Updated Code Block
-
-### Bug Diagnosis
-Goal - Diognosis bugs and fixing
-Input - I am working on a [project] and I have a bug on [feauture].
-Output - Corrected code
+- **Goal**: Increase code readability, maintainability, and adherence to clean code standards.
+- **Input**: Existing messy or complex code block.
+- **Expected output**: Refactored code block with improved structure and clear formatting.
 
 ### Code Translation
-Goal - Translate app, code or web-site into any language.
-Input - Translate this [language] to [requestedcode].
-Output - Transated application.
+- **Goal**: Translate existing code from one programming language or framework to another.
+- **Input**: Source code block and the requested target programming language.
+- **Expected output**: Idiomatic code snippet translated into the target language.
 
+---
 
 # Debugging
 
-### Error Logs
-
-Goal - Trace stack traces or runtime errors to locate the root cause of bugs.
-Input - Error output, and relevant code context
-Output - Root cause explanation and step-by-step fix recommendations.
+### Error Logs & Stack Traces
+- **Goal**: Trace stack traces or runtime errors to locate the root cause of bugs.
+- **Input**: Error log output and the relevant source code snippet.
+- **Expected output**: Root cause analysis and step-by-step fix recommendations with corrected code.
 
 ### Legacy Code Troubleshooting
+- **Goal**: Understand unexpected behavior in legacy or poorly documented code.
+- **Input**: Legacy function, unexpected runtime behavior, and expected vs. actual output.
+- **Expected output**: Explanation of logical flaws and a modernized refactored solution.
 
-Goal - Understand unexpected behavior in poorly documented legacy code.
-Input - Legacy function and expected vs. actual output
-Output - Analysis of logical flaws and a modern refactored solution.
+### Edge Case & State Verification
+- **Goal**: Diagnose subtle bugs caused by unexpected user input, state mutations, or null values.
+- **Input**: Problematic feature description, variable states, and broken user workflow.
+- **Expected output**: Detailed diagnosis of state mishandling along with defensive coding patches.
 
+---
 
 # Testing
 
 ### Unit Test Generation
-Goal: Automate unit test suite creation with high code coverage.
-Input: Target function or class logic
-Output: Comprehensive unit test suite using a specific framework (e.g., PyTest, Jest).
+- **Goal**: Automate unit test suite creation with high code coverage.
+- **Input**: Target function or class logic.
+- **Expected output**: Comprehensive unit test suite using a specified framework (e.g., PyTest, Jest).
 
 ### Mock Data Creation
-Goal: Generate realistic fixture data for integration testing.
-Input: Database schema or TypeScript interface/type definition
-Output: Valid JSON/YAML mock datasets covering typical and edge-case values.
+- **Goal**: Generate realistic fixture data for integration and local manual testing.
+- **Input**: Database schema, ORM model, or TypeScript interface definition.
+- **Expected output**: Valid JSON/YAML mock datasets covering happy path and edge-case values.
 
 ### Integration & E2E Scenario Drafting
-Goal: Outline test cases for user journeys and API workflows.
-Input: User story or feature requirements summary
-Output: Structured end-to-end test steps and assertion criteria.
+- **Goal**: Outline test cases for complex user journeys and multi-step API workflows.
+- **Input**: User story or feature requirements summary.
+- **Expected output**: Structured end-to-end test steps with explicit assertion criteria.
 
+---
+
+# Documentation & Knowledge Sharing
+
+### Codebase Onboarding & Summarization
+- **Goal**: Explain complex architecture or unfamiliar algorithms to developers.
+- **Input**: Source code file or repository module directory.
+- **Expected output**: High-level structural overview and functional breakdown of the module.
+
+### API & Inline Doc Generation
+- **Goal**: Automatically write standard docstrings and API specifications.
+- **Input**: Undocumented functions, methods, or REST API endpoint handlers.
+- **Expected output**: Fully annotated code with docstrings (e.g., JSDoc, PyDoc) detailing parameters and return types.
