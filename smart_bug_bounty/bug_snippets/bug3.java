@@ -1,19 +1,19 @@
-public class PalindromeChecker {
-    public static boolean isPalindrome(String str) {
-        if (str == null) return false;
-        
-        String cleanStr = str.toLowerCase();
-        int len = cleanStr.length();
-        
-        for (int i = 0; i <= len; i++) {
-            if (cleanStr.charAt(i) != cleanStr.charAt(len - i)) {
-                return false;
-            }
-        }
-        return true;
+public class Bug3 {
+
+    // Checks if the entered password matches the stored one
+    public static boolean isPasswordCorrect(String input, String stored) {
+        // BUG: == compares references, not string content
+        return input == stored;
     }
 
     public static void main(String[] args) {
-        System.out.println(isPalindrome("racecar"));
+        String stored = "secret123";
+        String input = new String("secret123");
+
+        if (isPasswordCorrect(input, stored)) {
+            System.out.println("Access granted");
+        } else {
+            System.out.println("Access denied");
+        }
     }
 }

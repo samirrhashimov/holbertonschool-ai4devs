@@ -1,13 +1,16 @@
-def calculate_average_grade(scores):
-    valid_scores = []
-    for i in range(0, len(scores)):
-        if scores[i] > 0:
-            valid_scores.append(scores[i])
-
-    total_sum = sum(valid_scores)
-    average = total_sum / len(valid_scores)
-    return round(average, 2)
+def last_n_items(items, n):
+    """Return the last n items of a list."""
+    if n <= 0:
+        return []
+    # BUG: off-by-one error in the slice
+    return items[-n + 1:]
 
 
-student_scores = [-5, -1, 0]
-print(calculate_average_grade(student_scores))
+def main():
+    numbers = [1, 2, 3, 4, 5]
+    result = last_n_items(numbers, 3)
+    print("Result:", result)  # Expected: [3, 4, 5]
+
+
+if __name__ == "__main__":
+    main()
