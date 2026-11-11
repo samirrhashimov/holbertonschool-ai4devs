@@ -7,10 +7,7 @@ async function fetchUserData(userId) {
 }
 
 function generateWelcomeMessage(userId) {
-    // Bug: Missing await inside async workflow
-    const user = fetchUserData(userId); 
-    
-    // Bug: Prints "[object Promise]" instead of actual username
+    const user = fetchUserData(userId);
     const message = `Welcome back, ${user.username}!`;
     return message;
 }
