@@ -1,6 +1,6 @@
 # Fix Validation
 
-## bug1.py
+## bug1_fixed.py (fix for bug1.py)
 - **Original Issue**: Off-by-one error, slice `items[-n + 1:]` dropped an element.
 - **Fix Applied**: Changed the slice to `items[-n:]`.
 - **Test Results**: All 3 test cases passed
@@ -8,7 +8,7 @@
   - `([1,2,3], 0)` -> `[]`
   - `([1,2], 5)` -> `[1, 2]`
 
-## bug2.js
+## bug2_fixed.js (fix for bug2.js)
 - **Original Issue**: Loop condition `i <= numbers.length` read `undefined`, so the result was `NaN`.
 - **Fix Applied**: Changed to `i < numbers.length` and added an empty-array guard.
 - **Test Results**: All 3 test cases passed
@@ -16,7 +16,7 @@
   - `[10]` -> `10`
   - `[]` -> `0`
 
-## bug3.java
+## bug3_fixed.java (fix for bug3.java)
 - **Original Issue**: `==` compared string references, so equal passwords were rejected.
 - **Fix Applied**: Replaced `==` with `Objects.equals(input, stored)`.
 - **Test Results**: All 3 test cases passed
@@ -24,7 +24,7 @@
   - `"wrong"` vs `"secret123"` -> `false`
   - `null` vs `"secret123"` -> `false` (no exception)
 
-## bug4.py
+## bug4_fixed.py (fix for bug4.py)
 - **Original Issue**: SQL injection through string concatenation in the query.
 - **Fix Applied**: Used a parameterized query (`WHERE username = ?`).
 - **Test Results**: All 3 test cases passed
