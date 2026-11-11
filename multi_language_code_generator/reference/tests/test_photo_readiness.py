@@ -1,4 +1,10 @@
+import sys
+import os
 import unittest
+
+# Module import path setup
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from photo_readiness import PhotoReadinessEngine
 
 class TestPhotoReadinessEngine(unittest.TestCase):
